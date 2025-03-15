@@ -67,7 +67,7 @@ header::before{
     width: 100%;
     min-height: 100vh;
     position: relative;
-    padding: 10rem 0px;
+    padding: 8rem 0px;
 }
 .section3::before{
     content: "";
@@ -84,6 +84,41 @@ header::before{
     background-size: 100%;
     opacity: 0.3;
     z-index: -100;
+}
+.section4{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.section4::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("./img/services\ img.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 100vh;
+    z-index: -100;
+    opacity: 0.5;
+}
+.services-boxs{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.services-box{
+    width: 31%;
+}
+.services-box p{
+    font-size: 15px;
 }
 @media all and (max-width:992px){
    
@@ -121,5 +156,23 @@ header::before{
         opacity: 0.3;
         z-index: -100;
     }
+    .services-box{
+        width: 40%;
+        margin: 2rem;
+    }
+}
+@media all and (max-width:768px){
+    .services-box{
+        width: 60%;
+        margin: 2rem;
+    }
+
+}
+@media all and (max-width:568px){
+    .services-box{
+        width: 90%;
+        margin: 2rem;
+    }
+
 }
 
