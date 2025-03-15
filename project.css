@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+    color:black;
+
+
+}
+
+/* header */
+header{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    
+}
+header::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-image: url("./img1.jpg");
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: -100;
+}
+.section1-content{
+    position: relative;
+
+}
+.navbar1{
+    width: 100%;
+}
+.nav-link{
+    margin-right: 1.5rem;    
+}
+.button-1{
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.section1{
+    /* top: 0px; */
+    width: 100%;
+    min-height: 60vh;
+    padding: 10px 4rem;
+}
+.section2{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.section3{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 10rem 0px;
+}
+.section3::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url("./about_img.jpg");
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: -100;
+}
+@media all and (max-width:992px){
+    header::before{
+        content: "";
+        width: 100%;
+        min-height: 185vh;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        background-attachment: fixed;
+        background-image: url("./img1.jpg");
+        background-size: 100%;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        z-index: -100;
+    }
+    .section3::before{
+        content: "";
+        width: 100%;
+        min-height:150vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-attachment: fixed;
+        background-image: url("./about_img.jpg");
+        background-position: 100%;
+        background-size: 100%;
+        opacity: 0.3;
+        z-index: -100;
+    }
+   
+
+}
+
